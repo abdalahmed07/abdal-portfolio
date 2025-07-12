@@ -13,13 +13,12 @@ export default function About() {
       }
     };
 
-    
     window.addEventListener("hashchange", scrollToSection);
     return () => window.removeEventListener("hashchange", scrollToSection);
   }, []);
 
   const frontendSkills = ["HTML5", "CSS3", "Tailwind CSS", "JavaScript", "React.js"];
-  const backendSkills = ["Node.js", "MongoDB"];
+  const backendSkills = ["Node.js", "Express.js", "MongoDB"];
 
   return (
     <section id="about" className="pt-32 pb-32 bg-black min-h-screen">
